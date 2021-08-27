@@ -184,6 +184,7 @@ function setup_os () {
 
     crontab ~/mycron
     rm ~/mycron
+    /etc/init.d/sshd restart
     systemctl restart sshd
     echo "${FUNCNAME[0]} Ended"
 }
